@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#641b35" />
+<title>Happy Birthday, Ninzo 🤍</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#681d38;--wine2:#8b3152;--cream:#fff8f0;--pink:#f7dce5;--ink:#3d202b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:30px 20px;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 20%,#f9e6ec,transparent 35%),radial-gradient(circle at 85% 80%,#efd1dc,transparent 30%),var(--cream)}
+.hero-inner{max-width:720px;position:relative;z-index:2}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:.75rem;color:var(--wine2);font-weight:600}
+h1,h2{font-family:'Playfair Display',serif}
+h1{font-size:clamp(3.3rem,10vw,7rem);line-height:.98;margin:20px 0;color:var(--wine)}
+h1 span{display:block;font-style:italic;color:#a34b6b}
+.lead{font-size:1.05rem;line-height:1.7;max-width:490px;margin:22px auto;color:#76515e}
+.primary{border:0;background:var(--wine);color:white;border-radius:999px;padding:15px 25px;box-shadow:0 10px 28px #681d3826;transition:.2s}
+.primary:hover{transform:translateY(-2px);background:#7b2948}
+.small-note{font-size:.8rem;margin-top:14px;color:#9a7785}
+.floating{position:absolute;color:#c16b8b;opacity:.5;animation:float 7s ease-in-out infinite;font-size:24px}
+.f1{top:13%;left:12%}.f2{top:23%;right:13%;animation-delay:1s}.f3{bottom:15%;left:16%;animation-delay:2s}.f4{bottom:20%;right:12%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-18px) rotate(12deg)}}
+section{padding:80px 20px}.wrap{max-width:850px;margin:auto}
+.section-tag{text-align:center;color:var(--wine2);letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;font-weight:600}
+h2{text-align:center;font-size:clamp(2rem,5vw,3.4rem);color:var(--wine);margin:12px 0 25px}
+.memory{background:#fffdf9;border:1px solid #f0dce3;border-radius:26px;padding:15px;box-shadow:0 18px 50px #681d3810;max-width:650px;margin:0 auto}
+.memory img{width:100%;display:block;border-radius:18px;max-height:650px;object-fit:cover}
+.caption{text-align:center;padding:17px 8px 8px;color:#815566;font-size:.95rem}
+.letter{background:#f6e5eb;border-radius:24px;padding:clamp(24px,6vw,48px);max-width:720px;margin:auto;line-height:1.9;font-size:1rem;white-space:pre-line}
+.letter strong{color:var(--wine)}
+.signature{text-align:right;font-family:'Playfair Display',serif;font-style:italic;font-size:1.3rem;color:var(--wine);margin-top:22px}
+.end{text-align:center;background:var(--wine);color:#fff8f0;padding:75px 20px}
+.end h2{color:#fff8f0}.end p{opacity:.85;line-height:1.7}
+footer{text-align:center;padding:20px;font-size:.78rem;color:#9a7785}
+#surprise{display:none;margin:22px auto 0;max-width:520px;background:#fff8f0;color:var(--wine);border-radius:18px;padding:22px;line-height:1.7}
+#surprise.show{display:block;animation:pop .5s ease}
+@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+canvas{position:fixed;inset:0;pointer-events:none;z-index:10}
+@media(max-width:520px){section{padding:60px 16px}.letter{font-size:.95rem}.memory{padding:10px}}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<header class="hero">
+  <span class="floating f1">♡</span><span class="floating f2">✦</span><span class="floating f3">♡</span><span class="floating f4">✧</span>
+  <div class="hero-inner">
+    <div class="eyebrow">A little birthday surprise</div>
+    <h1>Happy Birthday,<span>Ninzo</span></h1>
+    <p class="lead">For the boss lady with the cutest smile — a tiny page for someone who means a lot. 🤍</p>
+    <button class="primary" onclick="openSurprise()">Open your surprise ✨</button>
+    <div class="small-note">Made with lots of love & friendship</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">One special memory</div>
+    <h2>Our first meet 🥹</h2>
+    <div class="memory">
+      <img src="first-meet.jpg" alt="Our first meet memory">
+      <div class="caption">Ee photo ennum oru special memory ayitt irikkatte 🥹🤍</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-tag">A little note for you</div>
+    <h2>From my heart 🤍</h2>
+    <div class="letter">
+Happy birthday Ninzo 🥹🤍🎂
+
+Enikk nth parayanam enn ariyilla. Eppozhum happy ayitt irikkane Ninzo. Aa mugathe cute smile um vech, always oru boss lady ayitt, strong ayitt irikkane 🫶🏻
+
+Ith njan ninne meet cheythathinu shesham ulla second birthday aanu. Ee birthday ilum ninte koode undavan pattunnathil njan so happy aanu 🥹
+
+Nee agrahikkunna pole ellam karyangal nadakkatte. Nee ippo cheyyunna ella karyangalilum as a friend njan so proud of you Ninzo ❤️
+
+Life il eppozhum happy ayitt irikk. God bless you Ninzo 🤲🏻 Ninakk enthelum avashyam undengil njan evide undavum, as a good friend 🫂
+
+Nee enikku oru home feel pole aanu Ninzo… ath engane parayanam enn enikk ariyilla 🥹🤍
+
+Appo Ninzo, eppozhum happy ayitt irikkane ❤️
+      <div class="signature">— Your good friend 🫂</div>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <div class="section-tag" style="color:#f4bdcf">One last thing</div>
+    <h2>Enjoy your day to the fullesttt!</h2>
+    <p>Keep smiling, birthday girlrrr 🥹🎂❤️</p>
+    <button class="primary" style="background:#fff8f0;color:#681d38" onclick="openSurprise()">One more surprise 🤍</button>
+    <div id="surprise">Ninzo, just remember… no matter how far, you'll always have a friend cheering for you. Proud of you, always. 🫂❤️<br><br><strong>Happiest birthday once again!</strong></div>
+  </div>
+</section>
+<footer>Made specially for Ninzo · November 11 🤍</footer>
+
+<script>
+function openSurprise(){
+ const box=document.getElementById('surprise');box.classList.add('show');
+ box.scrollIntoView({behavior:'smooth',block:'center'});celebrate();
+}
+function celebrate(){
+ const c=document.getElementById('confetti'),ctx=c.getContext('2d');
+ c.width=innerWidth;c.height=innerHeight;
+ const pieces=Array.from({length:130},()=>({x:Math.random()*c.width,y:-Math.random()*c.height,
+ s:3+Math.random()*5,v:2+Math.random()*4,a:Math.random()*6,color:['#8b3152','#d88aa8','#f4c8d8','#e8b96b'][Math.floor(Math.random()*4)]}));
+ let frame=0;
+ function draw(){ctx.clearRect(0,0,c.width,c.height);pieces.forEach(p=>{p.y+=p.v;p.x+=Math.sin(p.y/25);ctx.fillStyle=p.color;ctx.fillRect(p.x,p.y,p.s,p.s*1.5)});if(++frame<150)requestAnimationFrame(draw);else ctx.clearRect(0,0,c.width,c.height)}
+ draw();
+}
+addEventListener('resize',()=>{const c=document.getElementById('confetti');c.width=innerWidth;c.height=innerHeight});
+</script>
+</body>
+</html>
